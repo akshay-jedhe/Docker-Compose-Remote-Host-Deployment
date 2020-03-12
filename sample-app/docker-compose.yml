@@ -1,0 +1,10 @@
+version: "3.7"
+services:
+      greetingApp:
+            build:
+                  context: ./app/
+                  dockerfile: Dockerfile
+            image: greeting
+            ports:
+            - 8080:8080
+            restart: on-failure
